@@ -1,0 +1,16 @@
+
+
+FOR LEX ONLY 
+
+lex filename.l
+gcc lex.yy.c
+./a.out
+
+
+
+FOR YACC and LEX
+
+yacc filename.y -d
+lex filename.l
+gcc y.tab.c lex.yy.c -w
+./a.out
