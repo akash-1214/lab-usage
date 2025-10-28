@@ -4,8 +4,7 @@
 int main()
 {
 	char expr[50];
-	char stack[50][10];
-	int top = -1, t = 1;
+	int t = 1;
 	char op, a, b;
 
 	printf("Enter an arithmetic expression (like b*c+a): ");
@@ -32,7 +31,7 @@ int main()
 			}
 
 			expr[i + 1] = 't'; // replace left operand with result
-			expr[i] = '0' + t; // mark temp variable number
+			// expr[i] = '0' + t; // mark temp variable number
 			t++;
 		}
 	}
